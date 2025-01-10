@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5c0uokawvfkv"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_rvxpe"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_aydgp"]
+load_path = "res://.godot/imported/godot_bottom.png-d4fdeb52385f1da07f0d2511b78fc5e9.ctex"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_21use"]
+radius = 20.0
+height = 40.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_rvxpe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("CompressedTexture2D_aydgp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 41)
+shape = SubResource("CapsuleShape2D_21use")
+
+[node name="Camera2D" type="Camera2D" parent="."]

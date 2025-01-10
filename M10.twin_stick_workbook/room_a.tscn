@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0jwub7vmdkfi"]
+
+[ext_resource type="PackedScene" uid="uid://cu2rb5dl4ljte" path="res://levels/rooms/room_a.tscn" id="1_rxls8"]
+[ext_resource type="PackedScene" uid="uid://b5c0uokawvfkv" path="res://player.tscn" id="2_xx8j8"]
+
+[node name="Room A" type="Node2D"]
+
+[node name="RoomA" parent="." instance=ExtResource("1_rxls8")]
+
+[node name="Player" parent="RoomA" instance=ExtResource("2_xx8j8")]
+position = Vector2(727.422, 504.834)
