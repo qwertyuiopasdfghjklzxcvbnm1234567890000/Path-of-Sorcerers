@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://cu2rb5dl4ljte"]
+[gd_scene load_steps=5 format=4 uid="uid://cu2rb5dl4ljte"]
 
 [ext_resource type="Script" path="res://levels/rooms/room.gd" id="1_8d3jl"]
 [ext_resource type="TileSet" uid="uid://bq65uwha45com" path="res://levels/rooms/tilesets/floating_dungeon_tileset.tres" id="1_hbbvy"]
 [ext_resource type="TileSet" uid="uid://cqb2wtrubw0n6" path="res://levels/rooms/tilesets/tileset_invisible_walls.tres" id="2_w4mpx"]
 [ext_resource type="PackedScene" uid="uid://ke0kmcp0efiv" path="res://levels/rooms/tilemap_layer_walls.tscn" id="3_sgyoc"]
-[ext_resource type="Texture2D" uid="uid://ji8u5ol58cd6" path="res://levels/pngimg.com - blood_PNG6080.png" id="5_e4gco"]
 
 [node name="RoomA" type="Node2D"]
 y_sort_enabled = true
@@ -23,12 +22,6 @@ use_parent_material = true
 position = Vector2(0, -1)
 tile_map_data = PackedByteArray("AAAAAAYABQAKAAMAAAAAAAcABQAJAAUAAAABAAUABQAHAAEAAAABAAYABQAHAAIAAAABAAcABQAHAAIAAAABAAgABQAJAAUAAAACAAUABQAHAAEAAAACAAYABQAHAAIAAAACAAcABQAKAAIAAAACAAgABQAHAAMAAAADAAUABQAIAAEAAAADAAYABQAJAAMAAAADAAcABQAHAAIAAAADAAgABQAHAAMAAAAEAAMABQAGAAEAAAAEAAQABQAGAAIAAAAEAAUABQAGAAIAAAAEAAYABQALAAMAAAAEAAcABQAHAAIAAAAEAAgABQAHAAIAAAAEAAkABQAJAAQAAAAFAAMABQAHAAEAAAAFAAQABQAHAAIAAAAFAAUABQAHAAIAAAAFAAYABQAHAAIAAAAFAAcABQAHAAIAAAAFAAgABQAHAAIAAAAFAAkABQAKAAQAAAAGAAEABQAHAAEAAAAGAAIABQAHAAIAAAAGAAMABQAHAAIAAAAGAAQABQAHAAIAAAAGAAUABQAHAAIAAAAGAAYABQAHAAIAAAAGAAcABQAHAAIAAAAGAAgABQAHAAIAAAAHAAEABQAHAAEAAAAHAAIABQAHAAIAAAAHAAMABQAHAAIAAAAHAAQABQAJAAEAAAAHAAUABQAIAAMAAAAHAAcABQAHAAEAAAAHAAgABQAHAAIAAAAHAAkABQALAAQAAAAIAAEABQAIAAEAAAAIAAIABQAIAAIAAAAIAAMABQAIAAIAAAAIAAQABQAIAAMAAAAGAAkABQAKAAQAAAA=")
 tile_set = ExtResource("1_hbbvy")
-
-[node name="Pngimg_com-BloodPng6080" type="Sprite2D" parent="Grass"]
-position = Vector2(738.27, 309.062)
-rotation = 2.15723
-scale = Vector2(0.0825425, 0.162414)
-texture = ExtResource("5_e4gco")
 
 [node name="Walls" parent="." instance=ExtResource("3_sgyoc")]
 position = Vector2(0, -64)
