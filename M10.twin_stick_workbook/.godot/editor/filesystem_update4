@@ -2,6 +2,7 @@ res://default_env.tres
 res://player.tscn
 res://levels/rooms/tilesets/floating_dungeon_tileset.tres
 res://levels/rooms/tilesets/tileset_invisible_walls.tres
-res://sprite_2d.gd
 res://room_a.tscn
 res://levels/rooms/room_a.tscn
+res://bullet.tscn
+res://bullet.gd
